@@ -212,9 +212,10 @@ section, #about img {
 	transition: all 0.5s ease; 
 }
 
-#github a, 
-#linkedin a {
+#github, 
+#linkedin {
 	color: #FFF;
+	line-height: 1.8;
 }
 
 #github:hover {
