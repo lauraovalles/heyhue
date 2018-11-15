@@ -13,61 +13,48 @@ body {
 
 /* Navigation */
 
-nav {
+#navbar {
 	display: block;
 	position: fixed;
 	z-index: 999;
 }
 
-nav button {
+nav .btn {
     position: absolute;
     left: -85px;
     transition: 0.3s;
     padding: 0px 10px;
-    text-align: right;
-	width: 120px;
+   	width: 120px;
 	height: 40px;
 	background: rgba(23, 162, 184, 0.8);
 	border-radius: 0 5px 5px 0;
-	border: none;
 	word-spacing: 10px;
-}
-
-nav a {
-	display: inline-block;
-	width: 100%;
-	text-decoration: none;
 	color: #FFF;
-}
-
-nav button:hover {
-    left: 0;
-    background: rgba(23, 162, 184, 1);
+	text-align: right;
+	line-height: 2.5;
 }
 
 nav a:hover {
+    left: 0;
+    background: rgba(23, 162, 184, 1);
 	text-decoration: none;
 	color: #FFF;
 }
 
 #home {
     top: 20px;
-    background: rgba(23, 162, 184, 0.8);
-}
+ }
 
 #work {
     top: 80px;
-    background: rgba(23, 162, 184, 0.8);
 }
 
 #profile {
     top: 140px;
-    background: rgba(23, 162, 184, 0.8);
 }
 
 #contactme {
     top: 200px;
-    background: rgba(23, 162, 184, 0.8);
 }
 
 /* Header */
@@ -95,40 +82,6 @@ header h1 {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: rgba(0, 0, 0, 0.4);
-	-webkit-animation-name: text-color; 
-    -webkit-animation-duration: 12s;
-    animation-name: text-color;
-    animation-duration: 12s;
-}
-
-@-webkit-keyframes text-color {
-    0%   {color: rgba(0, 0, 0, 0.4);}
-    25%  {color: rgb(102, 178, 178);}
-    50%  {color: rgb(231, 141, 157);}
-    100% {color: rgb(191, 143, 191);}
-}
-
-@keyframes text-color {
-    0%   {color: rgba(0, 0, 0, 0.4);}
-    25%  {color: rgb(102, 178, 178);}
-    50%  {color: rgb(231, 141, 157);}
-    100% {color: rgb(191, 143, 191);}
-}
-
-.blast {
-    opacity: 0;
-    display: inline-block;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-    transition: color 0.2s ease-out;
-}
-
-.blast:hover {
-    color: rgb(23, 162, 184);
-    -webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-	-o-transform: scale(1.5);
-	transform: scale(1.5);*/
 }
 
 #logo {
@@ -176,7 +129,7 @@ section h3 {
   	background-color: rgba(253, 215, 220, 0.4);
 }
 
-.worklink {
+.worktitle {
 	text-transform: uppercase;
   	color: #fff;
   	text-align: center;
@@ -185,17 +138,18 @@ section h3 {
   	background: rgb(123, 210, 212);
   	border: none;
   	width: 100%;
-  	-webkit-transform: translateY(35px);
-  	-ms-transform: translateY(35px);
-  	transform: translateY(35px);
+  	z-index: 1;
+  	-webkit-transform: translateY(40px);
+  	-ms-transform: translateY(40px);
+  	transform: translateY(40px);
   	-webkit-transition: all 0.4s ease-in-out;
   	transition: all 0.4s ease-in-out;
 }
 
-.worklink:hover {
-  	-webkit-transform: translateY(5px);
-  	-ms-transform: translateY(5px);
-  	transform: translateY(5px);
+.worktitle:hover {
+  	-webkit-transform: translateY(15px);
+  	-ms-transform: translateY(15px);
+  	transform: translateY(15px);
 }
 
 .work .work-view {
@@ -208,7 +162,7 @@ section h3 {
   	transform: scale(0);
   	-webkit-transition: all 0.4s ease-in-out;
   	transition: all 0.4s ease-in-out;
-  	margin-top: -48px;
+  	margin-top: -45px;
   	padding: 100px 100px;
 }
 
@@ -273,7 +227,7 @@ section, #about img {
 
 /* Contact Section */
 
-form, iframe {
+form, .map {
 	padding: 2%;
 }
 
