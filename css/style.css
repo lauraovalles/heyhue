@@ -232,21 +232,26 @@ form, .map {
 	padding: 2%;
 }
 
+iframe{
+	width:100%;
+    border-width: 0px;
+}
+
 *::-webkit-input-placeholder {
     color: #a7a5a5!important;
 }
 *:-moz-placeholder {
-    /* FF 4-18 */
+    /* FF 4-18 */ 
     color: #a7a5a5!important;
 }
 *::-moz-placeholder {
-    /* FF 19+ */
+    /* FF 19+ */ 
     color: #a7a5a5!important;
 }
 *:-ms-input-placeholder {
     /* IE 10+ */
     color: #a7a5a5!important;
-}
+} 
 
 #submitbtn {
 	background: rgba(23, 162, 184, 0.8);
